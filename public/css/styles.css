@@ -156,6 +156,14 @@ body {
 .spacey-link:hover {
   opacity: 1;
 }
+.float-right{
+  float: right;
+}
+.dribbble-link{
+  width: 40px;
+  position: relative;
+  top: -15px;
+}
 
 /* Media Queries
 -----------------------------------------------*/
