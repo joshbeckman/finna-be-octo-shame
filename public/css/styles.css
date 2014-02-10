@@ -1,0 +1,181 @@
+/* Reset (reduce browser inconsistencies)
+--------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Clearfix (control floating elements)
+-----------------------------------------------*/
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+/* Page Styles
+-----------------------------------------------*/
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: white;
+  color: #939598;
+  font-size: .75em;  /* 12px */
+  line-height: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.max-width {
+  max-width: 100%;
+  height: auto;
+}
+
+.spacey-header {
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+.spacey-logo-container {
+  width: 30%;
+  display: inline-block;
+  margin-top: 50px;
+  box-shadow: 0px 0px 2px 1px #ececec;
+  background-color: #fcfcfc;
+}
+
+.spacey-text {
+  font-size: 15px;
+  line-height: 45px;
+}
+
+.spacey-footer {
+  padding-top: 75px;
+  padding-bottom: 50px;
+}
+
+.spacey-link {
+  text-decoration: none;
+  color: #1a1a1a;
+  opacity: .5;
+}
+
+.spacey-link:hover {
+  opacity: 1;
+}
+
+/* Media Queries
+-----------------------------------------------*/
+@media screen and (max-width: 911px) {
+  .spacey-logo-container {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .spacey-logo-container {
+    width: 100%;
+  }
+
+  .spacey-header {
+    margin-top: 45px;
+  }
+
+  .spacey-text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}

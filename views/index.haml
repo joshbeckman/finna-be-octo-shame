@@ -1,0 +1,53 @@
+!!!
+%html.no-js{:lang => "en"}
+  / Brought to you by Team Josh, teamjosh.co
+  %head
+    %title Sam Spacey | Graphic Designer
+    %meta{:content => "My name is Sam Spacey. I am a Graphic Designer who believes in clean, simple design.", :name => "description"}
+      %meta{:charset => "UTF-8"}
+        / Google+ Author Link
+        %link{:href => "https://plus.google.com/105318114182885586204/posts", :rel => "author"}/
+        %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+          / Stylesheet (Includes Reset, Clearfix, Animations, and Media Queries)
+          %link{:href => "css/styles.css", :media => "screen", :rel => "stylesheet"}
+            / Portfolio Filter (via www.mititup.io)
+            %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans", :rel => "stylesheet", :type => "text/css"}
+  %body
+    /
+      Spacey Header
+      \////////////////////////////////////////////////////////////////
+    .spacey-header
+      .header-content.wrapper.cf.text-center
+        %img{:height => "200px", :src => "img/spacey-profile-pic.jpg", :width => "200px"}/
+        %div
+          %span.spacey-text My Name is Sam. I am a graphic designer who believes in clean, simple design.
+    /
+      Spacey thumbnails
+      \////////////////////////////////////////////////////////////////
+    .spacey-thumbnails
+      .spacey-thumbnails-content.wrapper.cf
+        / Portfolio Grid (Project thumbnail, Client, Description, Tags)
+        .thumbnail-container.text-justify.block
+          .spacey-logo-container
+            %img.max-width{:src => "img/logo-1.jpg"}/
+          .spacey-logo-container
+            %img.max-width{:src => "img/logo-2.jpg"}/
+          .spacey-logo-container
+            %img.max-width{:src => "img/logo-3.jpg"}/
+          .spacey-logo-container
+            %img.max-width{:src => "img/logo-5.jpg"}/
+          .spacey-logo-container
+            %img.max-width{:src => "img/logo-4.jpg"}/
+          .spacey-logo-container
+            %img.max-width{:src => "img/logo-6.jpg"}/
+          %span.stretch
+    /
+      Footer
+      \////////////////////////////////////////////////////////////////
+    .spacey-footer
+      .spacey-footer-content.wrapper.cf
+        %span &copy; Copyright 2014. All Rights Reserved.
+        |
+        %a.spacey-link{:href => "http://www.twitter.com/jbckmn", :target => "_blank", :title => "Joshua Beckman"} @jbckmn
+        %a.spacey-link{:href => "http://www.twitter.com/jawsmartin", :target => "_blank", :title => "Josh Martin"} @jawsmartin
+        %a.spacey-link{:href => "http://teamjosh.co", :target => "_blank", :title => "Team Josh"} Team Josh
